@@ -11,8 +11,11 @@ typedef struct{
     archieve* arch;
 }archieveList;
 
-void clear_List(archieveList *l);
-void print_List(archieveList *l);
+void clear_List(archieveList *list);
+void print_List(archieveList *list);
+
+archieveList readArchieveList(const char *input_name);
+void readContent(archieveList *archieveList);
 
 #endif
 
